@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <h1>Film Review Platform</h1>     
+    </header>
+    <body>
+        <script>
+            async function authenticateUser() {
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+
+                console.log(username)
+                console.log(password)
+
+                const data = await fetch(`http://localhost:8000/login?username=${username}&password=${password}`);
+
+                await console.log(await data.json()['username'])
+                
+            }
+            
+        </script>
+
+        <p>Please enter login details or create a new account</p>
+        <form>
+            <label for="username">Username:</label>
+            <input name="username" id="username" type="text" required maxlength="25">
+            <br>
+
+            <label for="password">Password:</label>
+            <input name="password" id="password" type="password" required minlength="4" maxlength="25">
+            <br>
+
+            <input id="loginSubmit" type="button" value="Submit" onclick="authenticateUser()">
+        </form>
+        <p id="test"></p>
+    </body>
+</html>

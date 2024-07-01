@@ -1,0 +1,25 @@
+{
+  "name": "filmreview",
+  "version": "1.0.0",
+  "description": "A film review web app for EAS training",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GethinLewis/Task8_Film_Review_App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GethinLewis/Task8_Film_Review_App/issues"
+  },
+  "homepage": "https://github.com/GethinLewis/Task8_Film_Review_App#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.1"
+  }
+}
